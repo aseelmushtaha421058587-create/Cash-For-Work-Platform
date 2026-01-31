@@ -1,0 +1,153 @@
+/* Global styles */
+:root {
+  --primary-color: #0f4c81;
+  --accent-color: #f4b400;
+  --light-bg: #f7f9fc;
+  --text-dark: #1f2a44;
+}
+
+html {
+  scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-dark);
+  padding-top: 70px; /* Offset for fixed navbar */
+  background-color: #fff;
+}
+
+.section-padding {
+  padding: 80px 0;
+}
+
+.section-title h2 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.section-title p {
+  color: #6c757d;
+}
+
+/* Navbar */
+.custom-navbar {
+  background-color: var(--primary-color);
+}
+
+.navbar-brand {
+  font-size: 1.4rem;
+}
+
+.nav-link {
+  color: #fff !important;
+  margin-left: 12px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--accent-color) !important;
+}
+
+/* Hero section */
+.hero-section {
+  background: linear-gradient(rgba(15, 76, 129, 0.7), rgba(15, 76, 129, 0.7)),
+    url("https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1600&q=80")
+      center/cover no-repeat;
+  min-height: 80vh;
+}
+
+/* Service cards */
+.service-card {
+  border: none;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card i {
+  color: var(--primary-color);
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Jobs table */
+#jobsTable tbody tr:hover {
+  background-color: rgba(15, 76, 129, 0.05);
+}
+
+.badge-open {
+  background-color: #28a745;
+}
+
+.badge-closed {
+  background-color: #dc3545;
+}
+
+/* Category cards */
+.category-card {
+  background-color: var(--light-bg);
+  padding: 20px 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.category-card i {
+  color: var(--primary-color);
+}
+
+.category-card:hover {
+  transform: translateY(-6px);
+  background-color: #e5eef8;
+}
+
+/* Video wrapper */
+.video-wrapper {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Contact form */
+.error-message {
+  color: #dc3545;
+  font-size: 0.85rem;
+}
+
+#formMessage {
+  font-weight: 600;
+}
+
+/* Featured jobs */
+.featured-card {
+  border: none;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0; /* Hidden for fadeIn on scroll */
+}
+
+.featured-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--primary-color);
+  padding: 30px 0;
+}
+
+.social-icons a {
+  margin: 0 8px;
+  font-size: 1.1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 60vh;
+  }
+}
